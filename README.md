@@ -12,16 +12,17 @@ version of what got sent out.
 Simply connect IO pin 32 to pin 33 on your esp32 module.
 
 ## To Compile and upload
-platformio run --target upload
+```platformio run --target upload```
 
 ## Expected output
+```
 delay tx_err rx_err ramp_err framing_err channel_sync_err
 192 0 0 0 192
 192 0 0 0 0
 192 0 0 0 0
 192 0 0 0 0
 ....
-
+```
 
 In this case, the DMA buffer was 32 samples, and 6 buffers = 192
 samples of delay.
